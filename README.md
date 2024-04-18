@@ -19,12 +19,12 @@ Azure Logic Apps を使用して Web API ライクなアプリケーションを
 
 なお、このふたつのサービスの違いについては以下のドキュメントを参照してください。
 
-* [**Standard シングルテナント ロジック アプリと従量課金マルチテナント ロジック アプリの違い**](https://learn.microsoft.com/ja-jp/azure/logic-apps/single-tenant-overview-compare)
+* [Standard シングルテナント ロジック アプリと従量課金マルチテナント ロジック アプリの違い](https://learn.microsoft.com/ja-jp/azure/logic-apps/single-tenant-overview-compare)
 
 ## 目次
 
-1. [JSON データに応答を返すLogic Apps の作成](#ex01.md)
-2. [作成した Logic Apps の検証](#ex02.md)
+1. [**JSON データに応答を返すLogic Apps の作成**](ex01.md)
+2. [**作成した Logic Apps の検証**](ex02.md)
 
 
 
