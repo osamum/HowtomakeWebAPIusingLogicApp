@@ -1,5 +1,25 @@
 # Howto make Web API using Azure LogicApps
-Azure Logic Apps を使用して Web API ライクなアプリケーションを作成するための手順について紹介します。
+このサンプルは Azure Logic Apps を使用して Web API ライクなアプリケーションを作成するための手順について紹介します。
+
+## はじめに
+
+Microsoft Azure はホストするアプリケーションの形態に応じて、さまざまなサービスを提供しています。たとえば、Web API サービスのホストには、基本となる [Azure App Service](https://learn.microsoft.com/ja-jp/azure/app-service/overview) はもちろん、関数型の API をサーバーレス環境でホストできる [Azure Functions](https://learn.microsoft.com/ja-jp/azure/azure-functions/functions-overview?pivots=programming-language-javascript) がありますが、[Azure Logic Apps](https://learn.microsoft.com/ja-jp/azure/logic-apps/logic-apps-overview) でも Web API のようなサービスを提供することができます。
+
+### Azure Logic Apps とは
+
+Logic Apps はビジュアルデザインツールを使用してノーコードでワークフローを記述するものです。
+
+ワークフローはトリガー、コネクタ、アクションでという要素を組み合わせて記述していきますが、特徴的なのはどれも外部サービスとの連携がシームレスに行えるということです。
+
+たとえば、RSS トリガーを使って、外部の Web コンテンツの更新を監視し、更新されたら更新情報を受け取り、Teams の任意のチャネルに投稿を行う、といったことがノーコードで記述できます。
+
+トリガーやコネクターやアクションは多くの外部サービスに対応しており、それら外部サービスの機能を利用するのにわざわざ API を調べて個別にコーティングを行う必要はなく、一つのワークフローの中で複数の外部サービスの機能を利用する場合でも、面倒な同期処理を記述する必要はありません。また、ワークフローの内容が変更になった際も、ビジュアルデザイナーで UI を操作するだけでよくわざわざコーティングをし直す必要はありません。
+
+こうしたワークフローのシナリオに合致するものであれば、Logic Apps を使用することで開発のスピードをあげメンテナンスコストを下げることができます。
+
+Azure Logic Apps は Request トリガーと Response アクションを組み合わせて REST API として利用することがですます。つまり、コーティングスキルのない人でも入力と出力のルールさえ理解してしまえば REST API が書けるということになります。
+
+## 要件
 
 この手順を実行するのに必要となるものは以下です。
 
@@ -25,6 +45,7 @@ Azure Logic Apps を使用して Web API ライクなアプリケーションを
 
 1. [**JSON データに応答を返すLogic Apps の作成**](ex01.md)
 2. [**作成した Logic Apps の検証**](ex02.md)
+3. [**まとめ**](ex03.md)
 
 ---
 ## LICENSE
